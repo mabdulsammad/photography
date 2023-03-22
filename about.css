@@ -1,0 +1,87 @@
+*{
+	margin: 0;
+	padding:0;
+	box-sizing: border-box;
+
+}
+.container{
+	position: relative;
+}
+h1{
+	color: #20aee6;
+	font-size: 40px;
+	font-kerning: auto;
+	text-align: center;
+	font-family: fantasy;
+	padding-top: 45px;
+	font-stretch: semi-condensed;
+}
+.logo img{
+	position: absolute;
+	left: 750px;
+	text-align: center;
+
+}
+.wedding{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	width: 100%;
+}
+.wedding img{
+	width: 300px;
+	height: 250px;
+	object-fit: cover;
+	padding: 10px;
+	transition: all 4;
+
+}
+.h3 h3{
+	text-align: center;
+	font-size: 20px;
+	font-style: bold;
+	color: black;
+	font-family: cursive;
+	
+	
+		background-color:#00e66b  
+
+}
+.wedding img:hover{
+
+	cursor:pointer;
+	box-shadow: 0px 0px 13px black;
+	transform: scale(1.03);
+
+	}
+	.popup{
+		position: fixed;
+		top:0;
+		left: 0;
+		z-index: 10;
+		width: 100%;
+		height: 100%;
+		display: none;
+		background-color: rgba(0,0,0,0.7);
+		z-index: 20;
+	}
+	.popup span{
+		position: absolute;
+		top: 0px;
+		right: 10px;
+		color: white;
+		cursor: pointer;
+		font-size: 40px;
+		cursor: pointer;
+		z-index: 20;
+
+
+	}
+.popup img{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform:translate(-50%,-50%);
+	max-width: 750px;
+	object-fit: cover;
+}
